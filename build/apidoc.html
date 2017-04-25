@@ -1,0 +1,329 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/crypho/cordova-plugin-secure-storage#readme"
+
+    >cordova-plugin-secure-storage (v2.6.5)</a>
+</h1>
+<h4>Secure storage plugin for iOS & Android</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cordova-plugin-secure-storage">module cordova-plugin-secure-storage</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cordova-plugin-secure-storage.</span>sjcl_ss</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cordova-plugin-secure-storage.sjcl_ss">module cordova-plugin-secure-storage.sjcl_ss</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-secure-storage.sjcl_ss.decrypt">
+            function <span class="apidocSignatureSpan">cordova-plugin-secure-storage.sjcl_ss.</span>decrypt
+            <span class="apidocSignatureSpan">(password, ciphertext, params, rp)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-secure-storage.sjcl_ss.encrypt">
+            function <span class="apidocSignatureSpan">cordova-plugin-secure-storage.sjcl_ss.</span>encrypt
+            <span class="apidocSignatureSpan">(password, plaintext, params, rp)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-secure-storage.sjcl_ss.prng">
+            function <span class="apidocSignatureSpan">cordova-plugin-secure-storage.sjcl_ss.</span>prng
+            <span class="apidocSignatureSpan">(defaultParanoia)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cordova-plugin-secure-storage.sjcl_ss.</span>bitArray</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cordova-plugin-secure-storage.sjcl_ss.</span>cipher</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cordova-plugin-secure-storage.sjcl_ss.</span>codec</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cordova-plugin-secure-storage.sjcl_ss.</span>exception</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cordova-plugin-secure-storage.sjcl_ss.</span>hash</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cordova-plugin-secure-storage.sjcl_ss.</span>json</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cordova-plugin-secure-storage.sjcl_ss.</span>keyexchange</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cordova-plugin-secure-storage.sjcl_ss.</span>misc</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cordova-plugin-secure-storage.sjcl_ss.</span>mode</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cordova-plugin-secure-storage.sjcl_ss.</span>random</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cordova-plugin-secure-storage" id="apidoc.module.cordova-plugin-secure-storage">module cordova-plugin-secure-storage</a></h1>
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cordova-plugin-secure-storage.sjcl_ss" id="apidoc.module.cordova-plugin-secure-storage.sjcl_ss">module cordova-plugin-secure-storage.sjcl_ss</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-secure-storage.sjcl_ss.decrypt" id="apidoc.element.cordova-plugin-secure-storage.sjcl_ss.decrypt">
+        function <span class="apidocSignatureSpan">cordova-plugin-secure-storage.sjcl_ss.</span>decrypt
+        <span class="apidocSignatureSpan">(password, ciphertext, params, rp)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">decrypt = function (password, ciphertext, params, rp) {
+  var j = sjcl.json;
+  return j._decrypt(password, j.decode(ciphertext), params, rp);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+            function (value) {
+payload = JSON.parse(value);
+_executeNativeMethod(
+    function (AESKey) {
+        var value, AESKeyBits;
+        try {
+            AESKeyBits = sjcl_ss.codec.base64.toBits(AESKey);
+            value = sjcl_ss.<span class="apidocCodeKeywordSpan">decrypt</span>(AESKeyBits, payload.value);
+            success(value);
+        } catch (e) {
+            error(e);
+        }
+    },
+    error,
+    &#x27;decrypt_rsa&#x27;,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-secure-storage.sjcl_ss.encrypt" id="apidoc.element.cordova-plugin-secure-storage.sjcl_ss.encrypt">
+        function <span class="apidocSignatureSpan">cordova-plugin-secure-storage.sjcl_ss.</span>encrypt
+        <span class="apidocSignatureSpan">(password, plaintext, params, rp)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">encrypt = function (password, plaintext, params, rp) {
+  var j = sjcl.json, p = j._encrypt.apply(j, arguments);
+  return j.encode(p);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    },
+
+    _sjcl_set: function (success, error, key, value) {
+var AESKey, encValue;
+
+AESKey = sjcl_ss.random.randomWords(8);
+_AES_PARAM.adata = this.service;
+encValue = sjcl_ss.<span class="apidocCodeKeywordSpan">encrypt</span>(AESKey, value, _AES_PARAM);
+// Encrypt the AES key
+_executeNativeMethod(
+    function (encKey) {
+        _executeNativeMethod(
+            function () {
+                success(key);
+            },
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-secure-storage.sjcl_ss.prng" id="apidoc.element.cordova-plugin-secure-storage.sjcl_ss.prng">
+        function <span class="apidocSignatureSpan">cordova-plugin-secure-storage.sjcl_ss.</span>prng
+        <span class="apidocSignatureSpan">(defaultParanoia)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">prng = function (defaultParanoia) {
+
+<span class="apidocCodeCommentSpan">  /* private */
+</span>  this._pools                   = [new sjcl.hash.sha256()];
+  this._poolEntropy             = [0];
+  this._reseedCount             = 0;
+  this._robins                  = {};
+  this._eventId                 = 0;
+
+  this._collectorIds            = {};
+  this._collectorIdNext         = 0;
+
+  this._strength                = 0;
+  this._poolStrength            = 0;
+  this._nextReseed              = 0;
+  this._key                     = [0,0,0,0,0,0,0,0];
+  this._counter                 = [0,0,0,0];
+  this._cipher                  = undefined;
+  this._defaultParanoia         = defaultParanoia;
+
+  /* event listener stuff */
+  this._collectorsStarted       = false;
+  this._callbacks               = {progress: {}, seeded: {}};
+  this._callbackI               = 0;
+
+  /* constants */
+  this._NOT_READY               = 0;
+  this._READY                   = 1;
+  this._REQUIRES_RESEED         = 2;
+
+  this._MAX_WORDS_PER_BURST     = 65536;
+  this._PARANOIA_LEVELS         = [0,48,64,96,128,192,256,384,512,768,1024];
+  this._MILLISECONDS_PER_RESEED = 30000;
+  this._BITS_PER_RESEED         = 80;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  }
+}
+};
+
+/** an instance for the prng.
+* @see sjcl.prng
+*/
+sjcl.random = new sjcl.<span class="apidocCodeKeywordSpan">prng</span>(6);
+
+(function(){
+// function for getting nodejs crypto module. catches and ignores errors.
+function getCryptoModule() {
+  // return require(&#x27;crypto&#x27;); // it will cause browserify package a huge node-crypto polyfill into the cordova.js bundle
+  return null;
+}
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
